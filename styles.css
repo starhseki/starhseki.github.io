@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #2C2B2F;
+    line-height: 150%;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 1rem 2rem;
+    text-wrap: pretty;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+    line-height: 130%;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+    line-height: 130%;
+}
+
+h3 {
+    font-family: "Fragment Mono", 'Courier New', Courier, monospace;
+    color: #777674;
+    font-size: 0.9rem;
+    margin: 0 0 1.5rem 0;
+    line-height: 130%;
+}
+
+p {
+    margin: 0 0 1rem 0;
+}
+
+a {
+    color: #325C7F;
+}
+
+a:visited {
+    color: #744B77;
+}
+
+.project {
+    margin-bottom: 5rem;
+    width: 100%;
+}
+
+.project-title {
+    margin-bottom: 2rem;
+}
+
+button {
+    background-color: #F1F0EE;
+    border-radius: 1.875rem;
+    padding: 1rem 2rem;
+    border-width: 0rem;
+    font-family: "Inter";
+    font-size: 1rem;
+    color: #2C2B2F;
+}
+
+.details {
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.project-banner {
+    object-fit: cover;
+    width: 100%;
+    height: 23.5rem;
+    margin-bottom: 1rem;
+}
+
+.callout {
+    margin: 3.75rem 0;
+}
+
+.title {
+    max-width: 70ch;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.detail-name {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+.detail-name h3 {
+    margin:0;
+}
+
+.caption {
+    font-family: "Fragment Mono", 'Courier New', Courier, monospace;
+    font-size: 0.875rem;
+    color: #777674;
+    margin: 0;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: start;
+    gap: 1rem;
+}
+
+button:hover {
+    background-color: #EBE9E5;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Fragment Mono", 'Courier New', Courier, monospace;
+    color: #777674;
+    padding: 5rem 0 2rem 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+
+@media (max-width:768px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .details {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
